@@ -157,7 +157,7 @@ ul {
 }
 
 .task-details {
-    width: 600px;
+    /* width: 600px; */
     width: 1000px;
 }
 
@@ -181,4 +181,48 @@ ul {
 .cal {
     margin-right: 5px;
     opacity: 0.6;
+}
+
+/* MEDIA QUERIES FOR SMALL DEVICES */
+/* IPHONES */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    body {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .main-box {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .task-list {
+        width: 100%;
+    }
+
+    ul {
+        width: 90%;
+    }
+    .task-details {
+        width: 50%;
+    }
+
+    .task-list {
+        width: 100%;
+    }
+
+    .check-box {
+        margin-left: 20px;
+    }
+    
+    .check-box input {
+        width: 15px;
+    }
 }
