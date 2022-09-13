@@ -169,6 +169,7 @@ ul {
 .task-category {
     width: 100px;
     color: white;
+    max-height: 45px;
     padding-top: 13px;
     text-align: center;
     text-transform: uppercase;
