@@ -47,15 +47,17 @@
                 </fieldset>
             </div>
     
-            <div class="grid-item buttons">
+            <div class="buttons">
                 <button type="submit" class="add-btn">
                     <i class="fa-solid fa-plus"></i> ADD TASK
                 </button>
+            </form>
+            <form action="/delete" method="post">
                 <button type="submit" class="del-btn">
                     <i class="fa-solid fa-trash-can"></i> DELETE TASK
                 </button>
             </div>
-        </form>
+        
 
         <div class="task-list">
             <ul>
@@ -63,7 +65,7 @@
                     <li>
                         <div class="list">
                             <div class="check-box">
-                                <input type="checkbox" name=`task${i}` id="tick">
+                                <input type="checkbox" name="id" value=<%=tasks[i]["_id"]%> id="tick">
                             </div>
                             <div class="task-details">
                                 <div class="title"> <%=tasks[i].description %> </div>
@@ -78,6 +80,7 @@
                 <% } %>
             </ul>
         </div>
+    </form>
     </div>
     <script src="/JS/categoryColors.js"></script>
 </body>

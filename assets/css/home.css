@@ -93,6 +93,7 @@ select {
 
 .buttons {
     margin: 50px auto;
+    display: flex;
     grid-column-end: 4;
     grid-column-start: 1;
 }

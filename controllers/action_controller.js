@@ -1,7 +1,6 @@
 const Task = require("../models/task");
 
 module.exports.action = function(req, res) {
-    console.log(req.body);
     Task.create({
         description: req.body.description,
         category: req.body.category,
