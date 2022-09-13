@@ -1,0 +1,184 @@
+/* BASIC PROJECT SETUP */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    /* background-color: black; */
+    font-family: 'Dosis', sans-serif;
+    background-color: rgba(0, 0, 0, 0.464);
+}
+
+.main-box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* GRID CONTAINER */
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    background-color: white;
+    grid-template-columns: 4;
+}
+
+/* HEADING */
+
+.heading {
+    height: 100px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.heading > h1 {
+    font-size: 65px;
+    padding-top: 10px;
+    word-spacing: 5px;
+    letter-spacing: 10px;
+}
+
+/* DESCRIPTION */
+.description {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-bottom: 1px solid grey;
+}
+
+fieldset {
+    margin-top: 5px;
+    border-style: none;
+}
+
+fieldset > input {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    border-style: none;
+    padding-bottom: 30px;
+}
+
+/* CATEGORY */
+
+.category {
+    grid-column-end: 2;
+    grid-column-start: 1;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+select {
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    opacity: 0.6;
+}
+
+/* DUE DATE */
+
+.due-date {
+    grid-column-end: 4;
+    grid-column-start: 2;
+    border-bottom: 1px solid grey;
+}
+
+/* BUTTONS */
+
+.buttons {
+    margin: 50px auto;
+    grid-column-end: 4;
+    grid-column-start: 1;
+}
+
+button {
+    margin: auto;
+    width: 250px;
+    border: none;
+    padding: 25px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.add-btn {
+    word-spacing: 5px;
+    margin-right: 5px;
+    background-color: rgb(38, 36, 36);
+}
+
+.del-btn {
+    word-spacing: 5px;
+    background-color: red;
+}
+
+/* LIST */
+.task-list {
+    margin: auto;
+    width: 1200px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+
+.list {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    border-top: 1px solid grey;
+}
+
+ul {
+    width: 1100px;
+    list-style-type: none;
+}
+
+.check-box {
+    margin-right: 10px;
+}
+
+.check-box input {
+    width: 50px;
+}
+
+.task-details {
+    width: 600px;
+    width: 1000px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.task-category {
+    width: 100px;
+    color: white;
+    padding-top: 13px;
+    text-align: center;
+    background-color: red;
+    text-transform: uppercase;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.cal {
+    margin-right: 5px;
+    opacity: 0.6;
+}

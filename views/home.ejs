@@ -7,10 +7,77 @@
     <title>
         <%= title %>
     </title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://kit.fontawesome.com/41f5e993c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>
-        <%= title %>
-    </h1>
+    <div class="main-box">
+        <div class="heading">
+            <h1>
+                <%= title %>
+            </h1>
+        </div>
+    
+        <form action="/action" method="post"  class="grid-container">
+            <div class="grid-item description">
+                <fieldset>
+                    <legend>DESCRIPTION</legend>
+                    <input type="text" name="description" placeholder="What do you need to do?">
+                </fieldset>
+            </div>
+    
+            <div class="grid-item category">
+                <fieldset>
+                    <legend>CATEGORY</legend>
+                    <select name="category" id="">
+                        <option value="">Choose a category</option>
+                        <option value="personal">Personal</option>
+                        <option value="school">School</option>
+                        <option value="work">Work</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="others">Others</option>
+                    </select>
+                </fieldset>
+            </div>
+    
+            <div class="grid-item due-date">
+                <fieldset>
+                    <legend>DUE DATE</legend>
+                    <input type="date" name="duedate" id="">
+                </fieldset>
+            </div>
+    
+            <div class="grid-item buttons">
+                <button type="submit" class="add-btn">
+                    <i class="fa-solid fa-plus"></i> ADD TASK
+                </button>
+                <button type="submit" class="del-btn">
+                    <i class="fa-solid fa-trash-can"></i> DELETE TASK
+                </button>
+            </div>
+        </form>
+
+        <div class="task-list">
+            <ul>
+                <% for(let i = 0; i < tasks.length; i++) { %>
+                    <li>
+                        <div class="list">
+                            <div class="check-box">
+                                <input type="checkbox" name=`task${i}` id="tick">
+                            </div>
+                            <div class="task-details">
+                                <div class="title"> <%=tasks[i].description %> </div>
+                                <div class="date">
+                                    <i class="fa-solid fa-calendar-days cal"></i> 
+                                    <%=tasks[i].duedate %> 
+                                </div>
+                            </div>
+                            <div class="task-category"><%=tasks[i].category %></div>
+                        </div>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
