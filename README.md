@@ -14,5 +14,8 @@ To get a look of what in the project, follow the following steps:
 
 ## PREVIEW
 
+###### LAPTOP AND TAB SCREEN VIEW
 ![Laptop size](https://user-images.githubusercontent.com/78020902/189827764-d42c0833-c75f-4b8e-a04e-6503aea4d875.png)
+
+###### MOBILE SCREEN VIEW
 ![mobile_view](https://user-images.githubusercontent.com/78020902/189827770-616be40c-753a-49d5-82a6-e8ee91aecc59.png)
